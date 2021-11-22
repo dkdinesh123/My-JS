@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$("h1").add("p").add("span").css("background-color", "powderblue")
+  $("p").add(document.getElementsByTagName("span")[0]).css("background-color", "red");
+  $("p").add(document.getElementsByTagName("span")[1]).css("background-color", "pink");
+  $("p").add(document.getElementsByTagName("span")[2]).css("font-weight", "BOLD");
+ $("p").add(document.getElementsByTagName(" ")).css("background-color", "gold");
+ $("div").add(document.getElementsByTagName(" ")).css("font-style", "Italic");
+});
+
+$(document).ready(function(){
+  $("button").mouseover(function(){
+    alert($("#ins").attr("href"));
+  });
+});
+
+</script>
+
+</head>
+<body style="background-color: yellowgreen;">
+
+<h1 style="text-align: center;">SACHIN TENDULKAR</h1>
+<p>Sachin is the cricket player.He is also called as "GOD OF CRICKET"</p>
+<p>He Had Two Childrens</p>
+
+<span>Spouse Name is:Anjali tendulkar</span><br><br>
+<span>Son Name is:Arjun tendulkar</span><br><br>
+<span>Daughter Name is:Sara Tendulkar</span><br><br>
+
+<div>Tendulkar received the Arjuna Award in 1994 for his outstanding sporting achievement, the Khel Ratna award in 1997, India's highest sporting honour, and the Padma Shri and Padma Vibhushan awards in 1999 and 2008, respectively, India's fourth- and second-highest civilian awards.
+    After a few hours of his final match on 16 November 2013, 
+    the Prime Minister's Office announced the decision to award him the Bharat Ratna,
+    India's highest civilian award.</div>
+
+<br><br>
+    <p2>
+    <a href="https://www.instagram.com" id="ins">Instagram
+   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><br><img src="images/Sea.jpg" width=40% height="40%">
+</a></p2>
+    <br><br><br>
+    <button>CLICK ME TO VISIT INSTAGRAM </button>
+
+
+
+</body>
+</html>

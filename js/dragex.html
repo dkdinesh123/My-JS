@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>draggable ex</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> -->
+  
+</head>
+
+    <style>
+  #feedback { 
+      color: slategrey;
+      font-size: 1.4em; 
+    }
+  #selectable .ui-selecting 
+  { 
+      background: red; 
+  }
+  #selectable .ui-selected 
+  { 
+      background: #F39814; color:black; 
+    }
+  #selectable { 
+      list-style-type: none; margin: 0; padding: 0; width: 60%; 
+    }
+  #selectable li 
+  { 
+      margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; 
+    }
+  </style>
+
+<script>
+    $(function(){
+        $('#draggable').draggable();
+    });
+    $(function(){
+        $('#foldable').fadeToggle();
+    });
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  $(function() {
+    $( "#img" ).attr("src","images/sea.jpg");
+    $( "#img" ).attr("width","400px");
+    $("div").removeAttr("style");
+  } );
+</script>
+<body style="background-color:skyblue;">
+    <div id="draggable" style="width:200px;height: 100px; padding:1em;">
+        <span class="move" style="width: 50px;padding: 1em;
+        background-color:yellowgreen;">Hi Dinesh</span>
+    </div>
+    <div id="foldable" style="width:200px;height: 100px; padding:1em;">
+        <span class="move" style="width: 50px;padding: 1em;
+        background-color:yellowgreen;">Hi Dhoni</span>
+    </div>
+   
+    <ol id="selectable">
+        <li class="ui-widget-content">1.Dinesh </li>
+        <li class="ui-widget-content">2.Karthik</li>
+        <li class="ui-widget-content">3.Dhoni</li>
+      </ol>
+       
+      <div style="background-color:red ;">
+          <img id="img" src="images/rn1.jpg" alt="renault" width=50% height=50%>
+      </div>
+</body>
+</html>

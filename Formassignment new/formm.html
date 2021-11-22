@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample form</title>
+    <link rel="stylesheet" href="formm.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+    <header class="ta-center">
+        <h1>form</h1>
+    </header>
+    <section class="details-form tab container spacebetween ">
+        <div class="basic-intro flex-start">
+            <h2 class="font-large fw-bold">Fill the form </h2>
+
+            <p class="font-small lh-normal">Fill in the details </p>
+
+            <form>
+
+                <label class="font-xsmall">NAME</label><br>
+                <div class="input-container form-input pos-rel">
+                    <input type="text" placeholder="Enter your name" required>
+                </div><br>
+
+                <label class="font-xsmall">PHONE NUMBER</label><br>
+
+                <div class="input-container form-input pos-rel">
+                    <input id="tel" type="tel" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter your Number">
+                </div><br>
+
+                <label class="font-xsmall">DATE OF BIRTH</label><br>
+
+                <div class="input-container form-input pos-rel">
+                    <input class="input-text" type="date" id="bdate">
+                </div><br>
+
+                <label class="font-xsmall">AGE</label><br>
+                <div class="input-container form-input pos-rel">
+                    <input type="text" id="age">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="main-form flex-end">
+
+            <div class="basic">
+                <div class="input-container form-input pos-rel">
+
+                    <input id="address" class="input-text font-small" placeholder="Enter the exact address">
+                </div>
+
+                <div class="input-container form-input pos-rel">
+
+                    <input id="email" class="input-text font-small" placeholder="Email address">
+                </div>
+
+                <div id="option1" class="options display-f ai-center form-input pos-rel ">
+
+                    <label class="check-box " for="check-box1">
+                        <input class="toggle display-n" type="checkbox" name="box" id="check-box1">
+                        <div id="checkmark1" class="checkmark display-ib greyborder">
+                            <span id="checksign1" class="checksign check"></span>
+                        </div>
+
+                    </label>
+                    <span class="font-small input-value dark">Trainee</span>
+
+                </div>
+
+                <div id="option2" class="options pos-rel display-f ai-center form-input  ">
+                    <label class="check-box " for="check-box2">
+                        <input class="toggle display-n" name="box" type="checkbox" id="check-box2">
+                        <div id="checkmark2" class="checkmark display-ib greyborder">
+                            <span id="checksign2" class="checksign check"></span>
+                        </div>
+                    </label>
+                    <span class="font-small input-value dark">Employee</span>
+
+                </div>
+
+
+                <div class="form-input timelimit font-small">
+                    <label for="time-limit"> </label>
+                    <input list="time-limits" id="time-limit">
+                    <datalist id="time-limits">
+                        <option value="This month">
+                        <option value="Next month">
+                        <option value="December 2021">
+                        <option value="January 2022">
+                        <option value="I don't know">
+                    </datalist>
+
+                </div>
+
+                <!--<div class=" form-input pos-rel timelimit font-small" id="datalist">
+                    <input class="font-normal" id="datalist-input" type="text" placeholder="I don't know">
+
+                    <div class="display-ib">
+                        <div class="arrow-btn up"></div>
+                        <div class="arrow-btn down"></div>
+                    </div>
+                    <ul id="datalist-ul"></ul>
+                </div>
+            </div>-->
+
+
+                <div class="alarm flex-end">
+                    <div class="alarm-boxes  display-f spacebetween">
+                        <div class="box1 options pos-rel greyborder">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490.5 490.5" style="enable-background:new 0 0 490.5 490.5;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M173.1,343.3h-17.7c-11.5,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9h17.7c11.5,0,20.9-9.4,20.9-20.9
+			C193.9,352.7,184.5,343.3,173.1,343.3z"/>
+		<path d="M334.7,343.3H317c-11.5,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9h17.7c11.5,0,20.9-9.4,20.9-20.9
+			C355.5,352.7,346.1,343.3,334.7,343.3z"/>
+		<path d="M469.1,50.3h-34.4V44c0-24-19.8-43.8-43.8-43.8H99C75,0.2,55.2,20,55.2,44v7.3H20.9C9.4,51.4,0,60.8,0,72.2v91.7
+			c0,11.5,9.4,20.9,20.9,20.9c10.4,0,19.8-9.4,19.8-19.8V93.1h14.6V410c0,15.6,8.4,29.4,20.9,37.2v22.2c0,11.5,9.4,20.9,20.9,20.9
+			s20.9-9.4,20.9-20.9v-15.6h254.4v15.6c0,11.5,9.4,20.9,20.9,20.9s19.8-9.4,20.9-20.9v-22.2c12.5-7.8,20.9-21.6,20.9-37.2V92h13.6
+			v71.9c0,11.5,9.4,20.9,20.9,20.9s20.9-9.4,20.9-20.9V71.2C490,59.7,480.6,50.3,469.1,50.3z M99,413.2c-2.1,0-3.1-1-3.1-3.1v-87.6
+			h298.2v87.6c0,2.1-1,3.1-3.1,3.1H99z M99,41h292c2.1,0,3.1,1,3.1,3.1v217.6l-87.6-65.9V164c0-11.5-9.4-20.9-20.9-20.9
+			s-20.9,9.4-20.9,20.9v84.4c0,11.5,9.4,20.9,20.9,20.9s19.8-9.4,20.9-20.9v-2.3l46,34.6h-205l46.4-35.2v2.9
+			c0,11.5,9.4,20.9,20.9,20.9c10.4,0,19.8-9.4,20.9-20.9V164c0-11.5-9.4-20.9-20.9-20.9s-20.9,9.4-20.9,20.9v31l-98,73.7V44.1
+			C95.9,42,97,41,99,41z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+
+                            <div class="alarm-check display-f ai-center">
+
+                                <label class="check-box " for="check-box4">
+                                    <input class="display-n alarmbox" type="checkbox" id="check-box4">
+                                    <div class="checkmark display-ib sign-box greyborder">
+                                        <span class="checksign1 check"></span>
+                                    </div>
+
+                                </label>
+                                <span class="font-small input-value">Bus</span>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="file-form greyborder" id="drop">
+                    <label>
+                        Pick your tshirt color
+                    </label>
+                </form>
+
+
+                <label>Bio</label><br>
+                <textarea class="greyborder" rows="4" cols="50" height="20"></textarea>
+
+                <input class="submit greyborder" type="submit">
+
+
+                <div class="drag greyborder">
+                    <div id="drag1">
+                        <p>1</p>
+                    </div>
+                    <div id="drag2">
+                        <p>2</p>
+                    </div>
+                    <div id="drag3">
+                        <p>3</p>
+                    </div>
+                    <div id="drag4">
+                        <p>4</p>
+                    </div>
+                    <div id="drag5">
+                        <p>5</p>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- <div id="drop">
+        <p>Drop On Me</p>
+    </div> -->
+
+
+    <footer class="ta-center">
+        <p>Copyright @2021</p>
+    </footer>
+
+    <script src="formm.js"></script>
+</body>
+
+</html>

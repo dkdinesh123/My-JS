@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>draggable ex</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> 
+  
+</head>
+
+<style>
+     #feedback { 
+      color: slategrey;
+      font-size: 1.4em; 
+    }
+  #selectable .ui-selecting 
+  { 
+      background: red; 
+  }
+  #selectable .ui-selected 
+  { 
+      background: #F39814; color:black; 
+    }
+  #selectable { 
+      list-style-type: none; margin: 0; padding: 0; width: 60%; 
+    }
+  #selectable li 
+  { 
+      margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; 
+    }
+</style>
+<script>
+    $(function() {
+        $("#uname").blur(function(){
+            let value= $("#uname").val();
+            if (value === '')
+            {
+                $("#unameerr").text("Enter Yourname").css("color","red");
+               $("#unameerr").text("Enter Yourname").css("font-weight","bold");
+               $("#uname").mouseover();
+
+            }
+            else
+            {
+                $("#sname").val(value);
+                $("#unameerr").text("");
+
+            }
+        })
+    });
+
+    $(function () {
+        $('form').draggable();
+    });
+
+    $( function() {
+    $( "#selectable" ).selectable();
+  } );
+</script>
+
+<body style="background-color:yellowgreen;">
+
+
+  <form style="border:2px double blue;width:400px;">
+        
+    <lable>Enter Your First name:</lable>
+    <input id="uname" type="text">
+    <lable id="unameerr"></lable><br>
+    
+    <lable>Entered your Last Name :</lable>
+    <input type="sname" type="text">
+    
+    <br>
+      
+    <lable>Enter Password:</lable>
+    <input type="sname" type="text">
+
+    
+
+
+
+    <!-- <h1 style="text-align: center;">FORM ATTRIBUTES ARE:</h1>
+      <ol id="selectable">
+            <li class="ui-widget-content">Dinesh </li>
+            <li class="ui-widget-content">Karthik</li>
+            <li class="ui-widget-content">Dhoni</li>
+            <li class="ui-widget-content">Kohli</li>
+            <li class="ui-widget-content">Clark</li>
+            <li class="ui-widget-content">Gilchrist</li>
+          </ol>
+
+    <br>
+    <br>
+    <br> -->
+
+   
+        
+    
+    
+    
+    </form>
+    <br><br><br><br>
+    <img src="images/Sea.jpg" width="30%" height="30%"/>
+</body>
+</html>

@@ -1,0 +1,428 @@
+.display-ib {
+    display: inline-block; }
+  
+  .display-b {
+    display: block; }
+  
+  .display-f {
+    display: flex; }
+  
+  .display-n {
+    display: none; }
+  
+  .ta-center {
+    text-align: center; }
+  
+  .ta-left {
+    text-align: left; }
+  
+  .ta-right {
+    text-align: right; }
+  
+  .ai-center {
+    align-items: center; }
+  
+  .spacebetween {
+    justify-content: space-between; }
+  
+  .spaceevenly {
+    justify-content: space-evenly; }
+  
+  .flex-start {
+    justify-content: flex-start; }
+  
+  .flex-end {
+    justify-content: flex-end; }
+  
+  .f-left {
+    float: left; }
+  
+  .f-right {
+    float: right; }
+  
+  .clear-fix::after {
+    content: "";
+    clear: both;
+    display: table; }
+  
+  .underline {
+    text-decoration: underline;
+    color: #212b36; }
+  
+  .green {
+    background-color: #00cfc0; }
+  
+  .bright-blue {
+    background-color: #23c0f5; }
+  
+  .aqua-blue {
+    background-color: #007ace; }
+  
+  .violet {
+    background-color: #5c6ac4; }
+  
+  .purple {
+    background-color: #9c6ade; }
+  
+  .pink {
+    background-color: #de6a93; }
+  
+  .white {
+    background-color: #f4f6f8; }
+  
+  .dark {
+    color: #212b36; }
+  
+  .blue-grey {
+    color: #919eab; }
+  
+  .box-prop {
+    height: 4px;
+    border-radius: 2.5px; }
+  
+  .pos-rel {
+    position: relative; }
+  
+  .greyborder {
+    border: 1px solid #c4cdd5; }
+  
+  .check-box {
+    cursor: pointer;
+    width: 28px;
+    height: 28px; }
+    .check-box .checkmark {
+      position: relative;
+      width: 28px;
+      height: 28px;
+      border-radius: 3px; }
+  
+  .focus {
+    border: 1px solid #23c0f5; }
+  
+  .check {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: inline-block;
+    transform: rotate(50deg);
+    height: 14px;
+    width: 7px; }
+  
+  .blue-check {
+    border-bottom: 3px solid #4ad5f6;
+    border-right: 3px solid #4ad5f6; }
+  
+  .white-check {
+    width: 5px;
+    height: 10px;
+    top: 15%;
+    left: 35%;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff; }
+  
+  .green-check {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 12px;
+    margin-bottom: -8px;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff; }
+  
+  .line {
+    display: inline-block;
+    width: 16px;
+    border-bottom: 2px solid black; }
+  
+  .documents .upload-box .drag-drop .blue, .files-section img, .talk-to-us, .final-step .completion-box .successful-notification .complete-btn {
+    cursor: pointer; }
+  
+  .font-xsmall {
+    font-size: 12px; }
+  
+  .font-small {
+    font-size: 14px; }
+  
+  .font-normal {
+    font-size: 15px; }
+  
+  .font-medium {
+    font-size: 18px; }
+  
+  .font-large {
+    font-size: 36px; }
+  
+  .fw-bold {
+    font-weight: 600; }
+  
+  .fw-normal {
+    font-weight: 300; }
+  
+  .lh-small {
+    line-height: 1.50; }
+  
+  .lh-normal {
+    line-height: 1.75; }
+  
+  .lh-medium {
+    line-height: 2; }
+  
+  h1, h2, h4 {
+    color: #212b36; }
+  
+  h4 {
+    font-size: 24px; }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Open Sans"; }
+  
+  ul {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    color: inherit; }
+  
+  main {
+    background-color: #f9fafb;
+    overflow: hidden; }
+  
+  input {
+    outline: none;
+    border: none;
+    background-color: inherit; }
+  
+  ::placeholder {
+    color: #adadad; }
+  
+  input:focus {
+    background-color: #ffffff; }
+  
+  section {
+    margin: auto;
+background-color: #f9fafb; }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent; }
+  
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  
+  .bg-grey {
+    background-color: #637381;
+    color: #ffffff; }
+  
+  .bg-white {
+    background-color: #ffffff;
+    color: #637381;
+    border-left: none; }
+
+  
+  .btn-width {
+    width: 220px; }
+  
+  .filter-btn {
+    padding: 10px 15px;
+    border-radius: 2px;
+    background-color: #47c1bf;
+    color: #ffffff; }
+  
+  .rownext-btn {
+    width: 90px;
+    color: #ffffff;
+    background-color: #637381;
+    padding: 10px 28px; }
+  
+  .pagebtn {
+    padding: 10px 60px 15px;
+    background-color: #f9fafb;
+    border: 1px solid #c4cdd5; }
+  
+  .small-btn {
+    margin-right: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #ffffff; }
+  
+  .xsmall-btn {
+    padding: 5px 10px;
+    border-radius: 12.5px;
+    color: #454f5b; }
+  
+  .arrow-btn {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin: 0; }
+  
+  .down {
+    border-top: 5px solid #637381; }
+  
+  .up {
+    border-bottom: 5px solid #637381;
+    margin-bottom: 5px; }
+  
+  .dropdown-sign {
+    margin-right: 12px;
+    margin-bottom: -3px; }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box; }
+  
+  
+  header {
+    padding: 10px 20px;
+    box-shadow: 0 1px 0 0 #4ad5f6; }
+
+  
+  footer {
+    padding: 48px 150px 85px 150px;
+    background-color: #f4f6f8; }
+
+  .fa {
+    font-size: 14px;
+    margin-right: 10px; }
+
+  
+  .details-form {
+    padding: 80px 40px 80px 40px; }
+    .details-form .basic-intro p {
+      margin-top: 12px;
+      color: #6a7c92; }
+    .details-form .basic-intro form {
+      padding-top: 60px; }
+      .details-form .basic-intro form label {
+        color: #47495a; }
+      .details-form .basic-intro form .input-container {
+        margin-top: 6px; }
+    .details-form .main-form .basic .options {
+      margin-top: 10px; }
+      .details-form .main-form .basic .options .input-value {
+        margin-left: 15px; }
+    .details-form .main-form .basic .timelimit {
+      margin-top: 30px; }
+      .details-form .main-form .basic .timelimit input {
+        width: 90%; }
+    .details-form .main-form .alarm {
+      margin-top: 20px; }
+      .details-form .main-form .alarm .alarm-boxes {
+        width: 420px; }
+        .details-form .main-form .alarm .alarm-boxes .box1 {
+          position: relative;
+          width: 200px;
+          height: 150px; }
+          .details-form .main-form .alarm .alarm-boxes .box1 svg {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            width: 46px;
+            height: 48px;
+            transform: translate(50%, 50%);
+            fill: #212b36; }
+          .details-form .main-form .alarm .alarm-boxes .box1 .alarm-check {
+            position: absolute;
+            top: 70%;
+            left: 5%;
+            padding-top: 5px;
+            margin-left: 10px; }
+            .details-form .main-form .alarm .alarm-boxes .box1 .alarm-check .input-value {
+              margin-left: 15px; }
+      .details-form .main-form .alarm .submit-buttons {
+        margin-top: 60px; }
+  
+  .form-input {
+    width: 380px;
+    padding: 10px 0 10px 15px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+    background-color: #ffffff; }
+    .form-input .input-text {
+      width: 80%;
+      margin-left: 10px; }
+   
+  
+  div.input-container:nth-child(2) {
+    margin: 30px 0; }
+    div.input-container:nth-child(1) {
+        margin: 30px 0; }
+
+.submit{
+  display: block;
+    padding:10px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.drag{
+  margin-top:10px;
+  display: inline-block;
+}
+#drag1{
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+}
+#drag2{
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+}
+#drag3{
+  width: 100px;
+  height: 100px;
+  background-color: rosybrown;
+}
+#drag4{
+  width: 100px;
+  height: 100px;
+  background-color: peachpuff;
+}
+#drag5{
+  width: 100px;
+  height: 100px;
+  background-color: thistle;
+}
+
+#non-drop {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+}
+
+ #drop {
+  width:300px;
+  height:200px;
+ 
+} 
+#drag1,#drag2,#drag3,#drag4,#drag5{
+  display:inline-block;
+  cursor: pointer;
+}
+
+.file-form{
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px 20px;
+
+}
+  
+  

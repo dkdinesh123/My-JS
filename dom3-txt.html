@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+    
+</head>
+
+<style> 
+h1
+{
+    color: red;
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h2
+{
+        color:gold;
+        font-size:xx-large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-style: italic;
+}
+body
+{
+    text-align: center;
+    background-color:yellowgreen;
+    font-weight: bold;
+    color: rgb(22, 36, 230);
+}
+
+
+</style>
+
+<body>
+<marquee> <h1>DOCUMENT OBJECT MODEL EVENTS :</h1> </marquee>
+            <h2>DETAILS OF AN EMPLOYEE:</h2>
+    Name of an Employee:<input type="text" id="uname">
+        <button type="button" id="btn">Click</button>
+         <script>
+                let txt = document.querySelector('#uname');
+                    //txt.ondblclick = function ()
+                 txt.onmousemove = function () 
+                // txt.onmousedown= function()
+                //txt.onmouseout= function()
+                //txt.onmouseup= function()
+                // txt.onkeypress=function()
+                {
+                //  alert(document.querySelector('#uname').value);
+                    alert("HI DINESH Welcome to this page..");
+                    
+                };   
+        </script>  
+        <br>
+        <br>
+        <br>
+        
+        Age of an Employee:<input type="number" id="no">
+        <button type="button" id="btn">Click me !</button>
+         <script>
+                let number = document.querySelector('#no');
+                number.ondblclick = function ()
+               //  number.onmousemove = function () 
+                // number.onmousedown= function()
+                //number.onmouseout= function()
+                //number.onmouseup= function()
+                // number.onkeypress=function()
+                {
+                // alert(document.querySelector('#uname').value);
+                    alert("Dinesh Age is : 22")
+                };
+        </script> 
+
+<br>
+<br>
+<br>
+   District of an Employee:<input type="text" id="name">
+        <button type="button" id="btn">Click me !</button>
+         <script>
+                let text = document.querySelector('#name');
+                text.onselect = function()
+                //text.ondblclick = function ()
+               //  text.onmousemove = function () 
+                // text.onmousedown= function()
+                //text.onmouseout= function()
+                //text.onmouseup= function()
+                // text.onkeypress=function()
+                {
+                // alert(document.querySelector('#uname').value);
+                    alert("Dinesh District  is : Coimbatore")
+                };
+        </script> 
+
+<br>
+<br>
+<br>
+Salary of an Employee:<input type="numbers" id="no1">
+<button type="button" id="btn">Click me !</button>
+ <script>
+        let numbers = document.querySelector('#no1');
+        numbers.onblur= function()    
+        {
+            alert("Salary of an Employee is : $900")
+         
+        };
+</script> 
+<br>
+<br>
+<br>
+        Phone Number:<input type="numbers" id="nos">
+        <!-- <button id="b1">Click me</button>    -->
+        <button id="b1">Bright me</button>     
+        <script>
+             let button=document.querySelector("#b1");
+            //let button=document.querySelector("#nos");
+            button.addEventListener("mouseover",() =>
+            {
+                alert("Dinesh Phone Number is : 7974226296")
+            });
+        </script> 
+     <br>
+     <br>
+     <br>
+              
+ <img src="images/Sea.jpg"  width="100%" height="100%">
+<br>
+<br>
+<br>
+        
+
+</script> 
+</body>
+</html> 

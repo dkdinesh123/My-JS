@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Jquery examples </title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+
+    <style>
+        img{
+            color: rgb(253, 13, 161);
+            border-right-width: medium;
+        }
+        body
+        {
+            background-color:rgb(218, 235, 70);
+        }
+        p
+        {
+            color: red;
+            font-weight:bold;;
+            font-size: xx-large;
+        }
+      
+        button
+        {
+            color: darkorange;
+        }
+
+    </style>
+    <label <b>ANIMATIONS PART:1 </b></label>
+    <script>
+        
+        $(document).ready(function () {
+            $("label").mouseover(function () {
+                $("img").animate({ bottom :'50px'});
+            });
+        });
+       
+        $(document).ready(function () {
+            $("label").mouseover(function () {
+                $("img").animate({ right :'50px'});
+            });
+        });
+        
+        $(document).ready(function () {
+            $("label").mouseover(function () {
+                $("img").animate({ top :'50px'});
+            });
+        });
+        
+      
+     
+
+        $(document).ready(function () {
+            $("label").mouseout(function () {
+                $("img").animate({ left :'50px'});
+            });
+        });
+
+     //selector
+
+        $(document).ready(function(){
+        $("p:last-child").css("background-color", "green");
+        });
+
+        $(document).ready(function(){
+            $("*").css("background-color", "yellow green");
+            });
+        
+
+        $(document).ready(function(){
+        $("p:hidden").show(6000);
+        });
+
+        $(document).ready(function(){
+        $("button").click(function(){
+            $("a[target='_blank']").hide();
+        });
+        });
+
+
+          
+        // $(document).ready(function () {
+        //     $("label").mouseover(function () {
+        //         $("img").animate({ left :'50px'});
+        //     });
+        // });
+      
+    </script>
+
+<body>
+    <marquee behavior="scroll" direction="left" id="mymarquee">
+        <p> WELCOME TO MY PAGE </p>
+        </marquee>
+        <br><br><br><br><br><br>
+        <input type="button" value="Stop Marquee" onClick="document.getElementById('mymarquee').stop();"><br><br>
+        <input type="button" value="Start Marquee" onClick="document.getElementById('mymarquee').start;">
+    
+   <br>
+   <br>
+   <br>
+
+   <p style="display:none;">welcome to animated page...</p>
+   <p><a href="https://www.instagram.com/html/" target="_blank">Instagram</a></p>
+
+   <p><a href="https://www.facebook.com/css/">Facebook</a></p>
+   <button>Click me</button>
+   
+    <img src="images/Sea.jpg" style="position: fixed; width: 200px;height: 200px;border:5px double red;">
+    </img> 
+    
+    <img src="images/rn1.jpg" style="position: fixed; width: 100px;height: 100px;border:5px double rgb(0, 255, 136);">
+    </img>
+
+    <div class="div"></div>
+
+
+    
+</body>
+</html>
